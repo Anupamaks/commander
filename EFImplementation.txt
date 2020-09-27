@@ -1,0 +1,30 @@
+
+Entity Framework 
+--------------------------
+1. run cli command for below newget packages
+
+  - EntityFrameworkCore
+  - EntityFrameworkCore.Design
+  - EntityFrameworkCore.SqlServer - 
+  - Add connectionstring in appsettings.json
+
+ Step 2 : 
+
+ - Add customDbContxtClass and construcor function 
+
+ Step 3 : 
+
+ - Add services.AddDbContext to the startup.cs configservices function
+
+ Step 4 : intitail migration 
+
+ -- dotnet ef  migrations add InitialMigrations : with this step an new migrationfolder is added 
+   however note tht no db interation is not yet taken.
+ --To undo this action, use 'ef migrations remove
+
+
+ step 5: Let the migration run in actual db : with this step we can see the CommanderDB in sql server. Aslo there is a migration history table in this new db
+    -dotnet ef database  update 
+
+
+

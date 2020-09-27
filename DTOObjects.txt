@@ -1,0 +1,14 @@
+
+-we should always hide internal implementation of model from client . Here comes tehe concerpt of DTO objects
+- Automapper helps in DTo manipulation. so goto nuget.org website search for automapepr and get the cli installatio
+"dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection ""
+
+--now add automapper in startup.cs service collecton
+
+--- now add a Dtos folder and add a dto model cs file.
+
+
+--- now we need to create a profies folder and mapping for source and target mapping 
+
+-- let us use the _imapper construcotr injection in contrller and use _mapper private read only property to use automapptign from command item object to dto object
+
